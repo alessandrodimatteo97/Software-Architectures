@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: javapod
+spec:
+  selector:
+    matchLabels:
+      app: javapod
+  replicas: 2 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: javapod
+    spec:
+      containers:
+      - name: javapod
+        image: alessandrodimatteo97/javapod:latest
+        env:
+        - name: ip
+          value: "mosquitto"

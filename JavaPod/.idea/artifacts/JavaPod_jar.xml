@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JavaPod:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/JavaPod_jar</output-path>
+    <root id="archive" name="JavaPod.jar">
+      <element id="module-output" name="JavaPod" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/org.eclipse.paho.client.mqttv3-1.2.0.jar" path-in-jar="/" />
+      <element id="library" level="module" name="org.eclipse.paho.client.mqttv3-1.2.0.jar" module-name="JavaPod" />
+    </root>
+  </artifact>
+</component>

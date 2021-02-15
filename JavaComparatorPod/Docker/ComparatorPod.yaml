@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: podcomparator
+spec:
+  selector:
+    matchLabels:
+      app: podcomparator
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: podcomparator
+    spec:
+      containers:
+        - name: podcomparator
+          image: alessandrodimatteo97/podcomparator:latest
+          env:
+            - name: ip
+              value: "mosquitto"
